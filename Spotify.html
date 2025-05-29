@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<link rel="stylesheet" href="CSS/style.css">
+
+<body>
+    <div class="navbar">
+        <div class="hamburger">
+            <img src="Img/hamburger.svg" alt="Menu">
+        </div>
+        <div class="holo">
+            <div class="logo">
+                <img src="Img/Spotify_Logo.png" alt="Spotify" class="pointer">
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav-item active">
+                <img src="Img/home.svg" alt="Home">
+                Home
+            </div>
+            <div class="nav-item">
+                <img src="Img/library.svg" alt="Library" style="position: relative; top: 1px;">
+                Library
+            </div>
+        </div>
+        <div class="searchbar">
+            <img src="Img/search.svg" alt="Search" class="search-icon">
+            <input type="text" id="searchbar" placeholder="What do you want to listen to?">
+        </div>
+        <div class="signlog">
+            <div class="signup">Sign up</div>
+            <div class="login">Log in</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                <div class="text">Your Library</div>
+                <div class="add"><img src="Img/add.svg" alt="Add" class="invert pointer"></div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="boxcontent box1">
+                        <div class="text">Create your first playlist</div>
+                        <p style="font-size: 17px; color: #b3b3b3; margin: 10px 0;">It's easy to help you</p>
+                        <button><b>Create playlist</b></button>
+                    </div>
+                    <div class="boxcontent box2">
+                        <div class="text">Let's find some podcasts to follow</div>
+                        <p style="font-size: 17px; color: #b3b3b3; margin: 10px 0;">We'll keep you updated on new
+                            episodes</p>
+                        <button><b>Browse podcasts</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pointer text2">Legal</div>
+                <div class="pointer text2">Privacy Center</div>
+                <div class="pointer text2">Privacy Policy</div>
+                <div class="pointer text2">Cookies</div>
+                <div class="pointer text2">About Ads</div>
+                <div class="pointer text2">Accessibility</div>
+            </div>
+            <div class="language flex pointer">
+                <img src="Img/lang.svg" class="invert pointer">
+                <div class="text">ENGLISH</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="category recently-played">
+                <div class="category-header">
+                    <div class="songtype">Bolywood Hits</div>
+                    <div class="see-all">See all</div>
+                </div>
+                <div class="cards">
+                    <div class="song">
+                        <img src="Img/tumse.jpg" alt="Playlist cover" class="card" data-song-path="songs/tumse.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Tum Se("From Teri Bato Mein Aisa Uljha Jiya")</div>
+                        <div class="singer">Sachin-Jigar,Raghav Chaitanya,Varun Jain,Indraneel</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/duniya.jpg" alt="Playlist cover" class="card" data-song-path="songs/duniya.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Duniyaa (From "Luka Chuppi")</div>
+                        <div class="singer">Akhil,Dhvani Bhanushali,Kunal Verma</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/zaalima.jpg" alt="Playlist cover" class="card" data-song-path="songs/zaalima.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">zaalima</div>
+                        <div class="singer">Arijit Singh,Harshdeep Kaur</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/terepyaarmein.jpg" alt="Playlist cover" class="card"
+                            data-song-path="songs/terepyaarmein.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Tere Pyaar Mein</div>
+                        <div class="singer">Pritam,Arijit Singh,Amitabh Bhattacharya,Nikhita Gandhi</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/Hawae.jpg" alt="Playlist cover" class="card" data-song-path="songs/Hawae.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">hawayein</div>
+                        <div class="singer">Pritam,Arijit Singh</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <div class="songtype">Trending songs</div>
+                    <div class="see-all">See all</div>
+                </div>
+                <div class="cards">
+                    <div class="song">
+                        <img src="Img/FindingHer.jpg" alt="Song cover" class="card"
+                            data-song-path="songs/FindingHer.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Finding Her</div>
+                        <div class="singer">Kushagra,Bharat,Saaheal</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/Afsos.jpg" alt="Song cover" class="card" data-song-path="songs/Afsos.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Afsos</div>
+                        <div class="singer">Anuv Jain,AP Dhillon</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/blank.jpg" alt="Song cover" class="card" data-song-path="songs/blank.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Blank</div>
+                        <div class="singer">Disfigure</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/blinding.jpg" alt="Song cover" class="card" data-song-path="songs/blinding.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Blinding Lights</div>
+                        <div class="singer">The Weeknd</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/HeatWaves.jpg" alt="Song cover" class="card" data-song-path="songs/HeatWaves.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Heat Waves</div>
+                        <div class="singer">Glass Animals</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-header">
+                    <div class="songtype">Most Popular English Songs Ever ❤️🔥!!</div>
+                    <div class="see-all">See all</div>
+                </div>
+                <div class="cards">
+                    <div class="song">
+                        <img src="Img/Stay.jpg" alt="Playlist cover" class="card" data-song-path="songs/Stay.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Stay(With Justin Bieber)</div>
+                        <div class="singer">The Kid LAROI,Justin Bieber</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/Imagine.jpg" alt="Playlist cover" class="card" data-song-path="songs/Imagine.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Believer</div>
+                        <div class="singer">Imagine Dragons</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/Starboy.jpg" alt="Playlist cover" class="card" data-song-path="songs/Starboy.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Starboy</div>
+                        <div class="singer">Post Malone,The Weeknd</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/Warrio.jpg" alt="Playlist cover" class="card" data-song-path="songs/Warrio.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Mortals</div>
+                        <div class="singer">Warrio</div>
+                    </div>
+                    <div class="song">
+                        <img src="Img/Craddles.jpg" alt="Playlist cover" class="card"
+                            data-song-path="songs/Craddles.mp3">
+                        <div class="play-button">
+                            <img src="Img/play.svg" alt="Play" class="invert">
+                        </div>
+                        <div class="songdesc">Cradles</div>
+                        <div class="singer">Sub Urban</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="now-playing-bar">
+        <div class="now-playing">
+            <img src="" alt="Now playing" class="now-playing-cover">
+            <div class="now-playing-info">
+                <div class="now-playing-title">Song Title</div>
+                <div class="now-playing-artist">Artist Name</div>
+            </div>
+        </div>
+
+        <div class="player-controls">
+            <div class="control-buttons">
+                <div class="control-button">
+                    <img src="Img/shuffle.svg" alt="Shuffle" class="invert">
+                </div>
+                <div class="control-button">
+                    <img src="Img/previous.svg" alt="Previous" class="invert">
+                </div>
+                <div class="play-pause">
+                    <img src="Img/pause.svg" alt="Pause" class="invert">
+                </div>
+                <div class="control-button">
+                    <img src="Img/next.svg" alt="Next" class="invert">
+                </div>
+                <div class="control-button">
+                    <img src="Img/repeat.svg" alt="Repeat" class="invert">
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-time"></div>
+                <div class="progress-track">
+                    <div class="progress-track-fill"></div>
+                    <div class="progress-handle" style="display: none;"></div>
+                </div>
+                <div class="progress-time"></div>
+            </div>
+        </div>
+
+        <div class="player-options">
+            <div class="volume-control">
+                <img src="Img/volume.svg" alt="Volume" class="volume-icon">
+                <div class="volume-track">
+                    <div class="volume-track-fill"></div>
+                    <div class="volume-handle" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
