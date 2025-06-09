@@ -473,6 +473,8 @@
  .now-playing-info {
      display: flex;
      flex-direction: column;
+     max-height: 70px;
+     max-width: 22vw;
  }
 
  .now-playing-title {
@@ -481,6 +483,9 @@
      margin-bottom: 4px;
      cursor: pointer;
      color: white;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
  }
 
  .now-playing-title:hover {
@@ -491,6 +496,9 @@
      font-size: 12px;
      color: #b3b3b3;
      cursor: pointer;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
  }
 
  .now-playing-artist:hover {
@@ -670,6 +678,10 @@
      .songtype {
          font-size: 22px;
      }
+
+     .now-playing-info {
+         max-width: 20vw;
+     }
  }
 
  @media (max-width: 992px) {
@@ -681,12 +693,12 @@
          width: 40vw;
          height: calc(100vh - 79px);
          position: fixed;
-         top: 78px;
+         top: 81px;
          left: 0;
          transform: translateX(-100%);
          z-index: 999;
          margin-top: 0;
-         border-radius: 0;
+         border-radius: 8px;
          padding-bottom: 10px;
      }
 
@@ -695,6 +707,8 @@
      }
 
      .right {
+         position: fixed;
+         top: 73px;
          width: calc(100% - 16px);
          height: calc(100vh - 90px);
          margin-bottom: 90px;
@@ -718,13 +732,18 @@
          width: 40vw;
          height: calc(100vh - 106px);
          position: fixed;
-         top: 99px;
+         top: 97px;
          left: 0;
          transform: translateX(-100%);
          z-index: 999;
          margin-top: 0;
-         border-radius: 0;
+         border-radius: 8px;
          padding-bottom: 10px;
+     }
+
+     .right {
+         position: fixed;
+         top: 93px;
      }
  }
 
@@ -734,12 +753,12 @@
          width: 40vw;
          height: calc(100vh - 85px);
          position: fixed;
-         top: 83px;
+         top: 101px;
          left: 0;
          transform: translateX(-100%);
          z-index: 999;
          margin-top: 0;
-         border-radius: 0;
+         border-radius: 8px;
          padding-bottom: 10px;
      }
 
@@ -799,19 +818,28 @@
      .control-buttons {
          gap: 15px;
      }
+
+     .now-playing-info {
+         max-width: 18vw;
+     }
  }
 
  @media (max-width: 576px) {
+     .right {
+         position: fixed;
+         top: 231px;
+     }
+
      .left {
          width: 80vw;
          height: calc(100vh - 235px);
          position: fixed;
-         top: 237px;
+         top: 239px;
          left: 0;
          transform: translateX(-100%);
          z-index: 999;
          margin-top: 0;
-         border-radius: 0;
+         border-radius: 8px;
          padding-bottom: 10px;
      }
 
@@ -898,9 +926,17 @@
          margin: 10px auto;
      }
 
+     .now-playing-info {
+         max-width: 16vw;
+     }
+
  }
 
  @media (max-width: 400px) {
+     .right {
+         padding-bottom: 150px;
+     }
+
      .cards {
          grid-template-columns: 1fr;
      }
