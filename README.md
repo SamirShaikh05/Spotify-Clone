@@ -15,3 +15,5 @@ Working on this Spotify Clone helped me:
 ✅ Dive deeper into advanced JavaScript concepts such as DOM manipulation, event handling, and state management.
 ✅ Learn how to store and retrieve data using Local Storage to deliver a persistent and personalized user experience.
 ✅ Sharpen my ability to build intuitive, real-world UI layouts with a clean and modern design approach.
+
+🌐 Live Website: [Spotify-Clone - GitHub Pages](https://samirshaikh05.github.io/Spotify-Clone/)
